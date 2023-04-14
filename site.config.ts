@@ -1,6 +1,6 @@
 import { siteConfig } from './lib/site-config'
 
-// https://7-rocket.notion.site/blog-yahaha-net-86887ee4e6dd43b694726bd74b2a6d5e
+// https://7-rocket.notion.site/Blog-7-86887ee4e6dd43b694726bd74b2a6d5e
 
 export default siteConfig({
   // the site's root Notion page (required)
@@ -33,7 +33,7 @@ export default siteConfig({
   defaultPageCoverPosition: 0.5,
 
   // whether or not to enable support for LQIP preview images (optional)
-  isPreviewImageSupportEnabled: true,
+  isPreviewImageSupportEnabled: false,
 
   // whether or not redis is enabled for caching generated preview images (optional)
   // NOTE: if you enable redis, you need to set the `REDIS_HOST` and `REDIS_PASSWORD`
@@ -49,9 +49,7 @@ export default siteConfig({
   //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
   // }
 
-  pageUrlOverrides: {
-    '/About': 'c497a6e09e594c6ea4db6ba34319242c'
-  },
+  pageUrlOverrides: null,
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages
@@ -60,7 +58,7 @@ export default siteConfig({
   navigationLinks: [
     {
       title: 'About',
-      pageId: 'c497a6e09e594c6ea4db6ba34319242c'
+      pageId: '2ab34ebaeb134c4f9b9365d006ebf826'
     }
     // {
     //   title: 'Contact',
