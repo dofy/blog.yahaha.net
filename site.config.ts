@@ -11,7 +11,7 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: '7-Blog # yahaha.net',
+  name: 'Blog #7',
   domain: 'blog.yahaha.net',
   author: 'Seven Yu',
 
