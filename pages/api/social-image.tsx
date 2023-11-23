@@ -10,10 +10,6 @@ const interRegularFontP = fetch(
   new URL('../../public/fonts/Inter-Regular.ttf', import.meta.url)
 ).then((res) => res.arrayBuffer())
 
-const interBoldFontP = fetch(
-  new URL('../../public/fonts/Inter-SemiBold.ttf', import.meta.url)
-).then((res) => res.arrayBuffer())
-
 export const config = {
   runtime: 'edge'
 }
@@ -38,10 +34,7 @@ export default async function OGImage(req: NextRequest) {
   const pageInfo: NotionPageInfo = await pageInfoRes.json()
   console.log(pageInfo)
 
-  const [interRegularFont, interBoldFont] = await Promise.all([
-    interRegularFontP,
-    interBoldFontP
-  ])
+  const [interRegularFont] = await Promise.all([interRegularFontP])
 
   return new ImageResponse(
     (
@@ -169,7 +162,7 @@ export default async function OGImage(req: NextRequest) {
         },
         {
           name: 'Inter',
-          data: interBoldFont,
+          data: interRegularFont,
           style: 'normal',
           weight: 700
         }
