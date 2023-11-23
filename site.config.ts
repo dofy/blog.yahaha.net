@@ -16,11 +16,12 @@ export default siteConfig({
   author: 'Seven Yu',
 
   // open graph metadata (optional)
-  description: "Seven Yu's Blog",
+  description: "Seven Yu's Blog from Notion",
 
   // social usernames (optional)
   twitter: 'dofy',
   github: 'dofy',
+  zhihu: 'dofy',
   linkedin: 'sevenyu',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
